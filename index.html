@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/96c1b74cac.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1> Hi,I'm Shamsul Ansari From India</h1>
+        </div>
+       </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                 <img src="../pics.jpg" length="900px" width="400px" alt="userimge">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am a dedicated and enthusiastic student with a passion for learning and exploring new technologies. I am currently in my 3rd year of B.Tech CSE and actively seeking opportunities to grow my skills and knowledge in the field of computer science. I am excited to take on new challenges and contribute to innovative projects that make a impact.
+
+                    Interests: Programming, Web Development, Machine Learning, Artificial Intelligence, and Gaming.
+                    Goals: To become a skilled software developer and work on projects that make a difference in people's lives.
+                    </p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Web Development</span><br>web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024-current</span><br>Internship at Codsoft</li>
+                            <li><span>2024-August</span><br>Internship at JP Morgan</li>
+                            <li><span>2023-February</span><br>Completed Google Analytics</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022-26</span><br>Persuing B.tech from AIMT Lucknow</li>
+                            <li><span>2021</span><br>Passed Intermediate From UP Board</li>
+                            <li><span>2019</span><br>Passed High School from  UP Board</li>
+                        </ul>
+                      </div>
+            </div>
+        </div>
+
+    </div>
+   </div>
+
+      <!-- services -->
+       <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>web Designing</h2>
+                    <p> we designed the best web pages</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>UI/UX Designing</h2>
+                    <p> we designed the best UI/UX Designs</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>App Designing</h2>
+                    <p> we designed the best android apps</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+       </div>
+   <!-- ------portfolio----- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented persons of the world.
+                            download it from play store</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented persons of the world.
+                            download it from play store</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented persons of the world.
+                            download it from play store</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+</body>
+</html>
